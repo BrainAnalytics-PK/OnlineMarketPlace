@@ -19,9 +19,9 @@ const Navbar = () => {
           </span>
           <MdLocationPin className="icons-location" />
           <Select className="location" label="Set Location">
-            <MenuItem value={"PAK"}>Pakistan</MenuItem>
-            <MenuItem value={"IND"}>India</MenuItem>
-            <MenuItem value={"AFG"}>Afghanistan</MenuItem>
+            <MenuItem value={"PAK"}>Pak</MenuItem>
+            <MenuItem value={"IND"}>Ind</MenuItem>
+            <MenuItem value={"AFG"}>Afg</MenuItem>
           </Select>
         </Grid>
         {/* Search Bar */}
