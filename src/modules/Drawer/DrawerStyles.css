@@ -1,0 +1,25 @@
+.cat-toggle{
+    background: none;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    padding: 10px;
+    color: red;
+}
+.cat-toggle:hover{
+    background-color: red;
+    color: rgb(193, 191, 191);
+}
+.cat-selector{
+    background: none;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    padding: 10px;
+}
+.cat-selector:hover{
+    background-color:rgb(193, 191, 191) ;
+    color: red;
+}

@@ -1,0 +1,29 @@
+.Categories-btn{
+    background: none;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    padding: 10px;
+}
+.Categories-btn:hover{
+    background-color: rgb(193, 191, 191);
+    color: red;
+
+}
+.Categories-toggle{
+    background: none;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    padding: 10px;
+    color: red;
+}
+.Categories-toggle:hover{
+    background-color: rgb(193, 191, 191);
+
+}
+.categories-container{
+    background-color: whitesmoke;
+}

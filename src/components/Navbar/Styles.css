@@ -21,9 +21,10 @@
   color: rgb(193, 191, 191);
 }
 .search button:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(193, 191, 191);
+  color: red;
   border-radius: 5px;
+
 }
 .location {
   margin-top: 20px;
@@ -46,9 +47,10 @@
 }
 .cart-button:hover {
   background-color: rgb(193, 191, 191);
+  color: red;
 }
 .signin {
-  margin-top: 20px;
+  margin-top:20px;
 }
 .signin-button {
   background: none;
@@ -60,4 +62,5 @@
 }
 .signin-button:hover {
     background-color: rgb(193, 191, 191);
+    color: red;
   }

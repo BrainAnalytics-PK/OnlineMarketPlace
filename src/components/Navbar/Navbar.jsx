@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
         </Grid>
         {/* Sign In Settings */}
-        <Grid item xs={3} sm={3} md={1}>
+        <Grid item xs={4} sm={3} md={1}>
           <div className="signin">
             <button className="signin-button">
               <AiOutlineUser /> SignIn
