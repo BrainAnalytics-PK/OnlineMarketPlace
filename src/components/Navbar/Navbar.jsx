@@ -7,7 +7,7 @@ import "./Styles.css";
 const Navbar = () => {
   return (
     <div className="navbar-container">
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
         {/* LOGO CONTAINER */}
         <Grid item xs={6} sm={6} md={1}>
           <h1>LOGO</h1>

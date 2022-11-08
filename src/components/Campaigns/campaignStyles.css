@@ -1,0 +1,52 @@
+.campaign-img{
+    width:40%;
+}
+.campaign-title h3{
+    text-align: center;
+    color: rgb(0, 64, 26);
+
+}
+.campaign-title p{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    animation: effect 0.5s linear infinite;
+}
+@keyframes effect {
+    0% {
+        color: green;
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        color: red;
+        -webkit-background-clip: text;
+    }
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.campaign-cards p{
+font-size: medium;
+font-weight: bold;
+text-align: center;
+}
+
+.campaign-cards button{
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgb(0, 64, 26);
+    text-align: center;
+    background: none;
+    font-size: large;
+    border-radius: 5px;
+    padding: 10px;
+}
+.campaign-cards button:hover{
+    background-color: whitesmoke;
+    color: rgb(0, 64, 26);
+}

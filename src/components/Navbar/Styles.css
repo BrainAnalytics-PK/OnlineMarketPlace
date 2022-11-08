@@ -8,7 +8,9 @@
   height: 30px;
 }
 .search input::placeholder {
-  font-size: large;
+  text-align: center;
+  font-size: medium;
+  color: rgb(0, 64, 26);
 }
 .search input:focus {
   border: none;

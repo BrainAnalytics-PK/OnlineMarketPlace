@@ -14,8 +14,8 @@ const Slider = () => {
     <Grid container justify="center">
       <div className="slider">
           <SimpleImageSlider
-            width={1200}
-            height={200}
+            width={1350}
+            height={350}
             images={Images}
             showBullets={true}
             showNavs={true}
