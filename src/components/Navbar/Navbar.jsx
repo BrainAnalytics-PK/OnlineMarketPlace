@@ -6,48 +6,42 @@ import "./Styles.css";
 
 const Navbar = () => {
   return (
-    <>
+    <div className="navbar-container">
       <Grid container spacing={2}>
         {/* LOGO CONTAINER */}
-        <Grid item xs={6} sm={6} md={2}>
+        <Grid item xs={6} sm={6} md={1}>
           <h1>LOGO</h1>
         </Grid>
         {/* Delivery Location */}
-        <Grid item xs={6} sm={6} md={2}>
-          <span>
-            <b>Deliver To</b>
-          </span>
+        <Grid item xs={6} sm={6} md={1}>
           <MdLocationPin className="icons-location" />
-          <Select className="location" label="Set Location">
-            <MenuItem value={"PAK"}>Pak</MenuItem>
-            <MenuItem value={"IND"}>Ind</MenuItem>
-            <MenuItem value={"AFG"}>Afg</MenuItem>
-          </Select>
+          <select name="Location" className="location">
+            <option value="PAK" defaultChecked>PAK</option>
+            <option value="IND">IND</option>
+            <option value="AFG">AFG</option>
+          </select>
         </Grid>
         {/* Search Bar */}
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid item xs={12} sm={12} md={7}>
           <Paper elevation={2} className="search">
             <input type="text" placeholder="Search Your Favorite Products" />
             <button>Search</button>
           </Paper>
         </Grid>
         {/* Language Selector */}
-        <Grid item xs={3} sm={3} md={2}>
-          <span>
-            <b>Language</b>
-          </span>
-          &nbsp;
-          <Select className=" location" label="Set Language">
-            <MenuItem value={"ENG"}>En</MenuItem>
-            <MenuItem value={"ARB"}>Ar</MenuItem>
-            <MenuItem value={"UR"}>Ur</MenuItem>
-          </Select>
+        <Grid item xs={3} sm={3} md={1}>
+        <select name="Location" className="location">
+            <option value="ENG" defaultChecked>EN</option>
+            <option value="ARB">AR</option>
+            <option value="UR">UR</option>
+          </select>
         </Grid>
         {/* Cart Settings */}
         <Grid item xs={3} sm={3} md={1}>
           <div className="cart-nav">
             <button className="cart-button">
               <AiOutlineShopping />
+              <br />
               Cart
             </button>
           </div>
@@ -56,12 +50,13 @@ const Navbar = () => {
         <Grid item xs={4} sm={3} md={1}>
           <div className="signin">
             <button className="signin-button">
-              <AiOutlineUser /> SignIn
+              <AiOutlineUser />
+              <br /> SignIn
             </button>
           </div>
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 

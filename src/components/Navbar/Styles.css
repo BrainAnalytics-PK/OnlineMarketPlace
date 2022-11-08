@@ -4,7 +4,7 @@
 }
 .search input {
   border: none;
-  width: 80%;
+  width: 90%;
   height: 30px;
 }
 .search input::placeholder {
@@ -17,24 +17,25 @@
   background: none;
   border: none;
   margin-top: 5px;
-  margin-left: 20px;
-  color: rgb(193, 191, 191);
+  margin-left: 5px;
+  color: rgb(0, 64, 26);
 }
 .search button:hover {
-  background-color: rgb(193, 191, 191);
-  color: red;
+  background-color: white;
+  color: rgb(0, 64, 26);
   border-radius: 5px;
 
 }
 .location {
-  margin-top: 20px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 50px;
 }
 .icons-location {
   font-size: xx-large;
-  color: rgb(193, 191, 191);
+  color: white;
 }
 .cart-nav {
-  margin-top: 20px;
   font-size: large;
 }
 .cart-button {
@@ -44,13 +45,15 @@
   font-size: large;
   font-weight: 500;
   padding: 10px;
+  color: white;
+
 }
 .cart-button:hover {
-  background-color: rgb(193, 191, 191);
-  color: red;
+  background-color: white;
+  color: rgb(0, 64, 26);
 }
 .signin {
-  margin-top:20px;
+  margin-top:0px;
 }
 .signin-button {
   background: none;
@@ -59,8 +62,18 @@
   font-size: large;
   font-weight: 500;
   padding: 10px;
+  color: white;
 }
 .signin-button:hover {
-    background-color: rgb(193, 191, 191);
-    color: red;
+    background-color: white;
+    color: rgb(0, 64, 26);
+  }
+  .navbar-container{
+    background-color: rgb(0, 64, 26);
+    width: 100%;
+    border-radius: 5px;
+  }
+  h1{
+    margin-left: 10px;
+    color: white;
   }
