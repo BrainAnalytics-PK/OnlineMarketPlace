@@ -1,50 +1,50 @@
+// To Fetch Data from Back-End
 import React from "react";
-import { Grid, Paper } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import image1 from "../../assets/1.webp";
 import image2 from "../../assets/2.webp";
 import image3 from "../../assets/3.webp";
-import "./campaignStyles.css";
+import Campaign from "./Campaign";
+
+const CampaignData = [
+  {
+    id: 1,
+    Name: "Amazing Sale on Headphones",
+    image: image1,
+    btnText: "BUY NOW!!",
+  },
+  {
+    id: 1,
+    Name: "Amazing Sale on Headphones",
+    image: image2,
+    btnText: "BUY NOW!!",
+  },
+  {
+    id: 1,
+    Name: "Amazing Sale on Headphones",
+    image: image3,
+    btnText: "BUY NOW!!",
+  },
+];
 
 const Campaigns = () => {
   return (
-    <Grid container justify="center" spacing={0}>
-      {/* Flash Sale Container */}
-      <Grid item xs={12} sm={12} md={12}>
+    <main>
+       <div>
         <div className="campaign-title">
           <h2>Campaigns</h2>
           <h3>Flash SALE!!!</h3>
           <p>Upto 70% OFF!!! Hurry Up till Stock </p>
         </div>
+      </div>
+      <Grid container justify="center" spacing={0}>
+        {CampaignData.map((campaign) => (
+          <Grid key={campaign.id} xs={4} sm={4} md={4}>
+            <Campaign campaign={campaign} />
+          </Grid>
+        ))}
       </Grid>
-      {/*  Sale Cards */}
-      <Grid item xs={4} sm={4} md={4}>
-        <Paper elevation={2}>
-          <div className="campaign-cards">
-          <p>Amazing Deals on Mobile Accessories</p>
-          <img className="campaign-img" src={image2} alt="pro" />
-          <button>Buy Now!</button>
-          </div>
-        </Paper>
-      </Grid>
-      <Grid item xs={4} sm={4} md={4}>
-        <Paper elevation={2}>
-        <div className="campaign-cards">
-          <p>Amazing Deals on Mobile Accessories</p>
-          <img className="campaign-img" src={image1} alt="pro" />
-          <button>Buy Now!</button>
-          </div>
-        </Paper>
-      </Grid>
-      <Grid item xs={4} sm={4} md={4}>
-        <Paper elevation={2}>
-        <div className="campaign-cards">
-          <p>Amazing Deals on Mobile Accessories</p>
-          <img className="campaign-img" src={image3} alt="pro" />
-          <button>Buy Now!</button>
-          </div>
-        </Paper>
-      </Grid>
-    </Grid>
+    </main>
   );
 };
 
