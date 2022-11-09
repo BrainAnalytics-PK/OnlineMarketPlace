@@ -11,10 +11,10 @@ import "./sliderStyles.css";
 const Slider = () => {
   const Images = [{ url: image4},{ url: image2 },{ url: image1 }, { url: image3 }, ];
   return (
-    <Grid container justify="center">
+    <Grid container justifyContent="center">
       <div className="slider">
           <SimpleImageSlider
-            width={1350}
+            width={1300}
             height={350}
             images={Images}
             showBullets={true}

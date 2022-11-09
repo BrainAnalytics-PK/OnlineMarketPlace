@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Select, MenuItem } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { MdLocationPin } from "react-icons/md";
 import { AiOutlineShopping, AiOutlineUser } from "react-icons/ai";
 import "./Styles.css";

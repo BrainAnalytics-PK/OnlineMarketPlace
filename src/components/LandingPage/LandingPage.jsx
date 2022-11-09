@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import Slider from "../../modules/Slider/Slider";
 import Campaigns from "../Campaigns/Campaigns";
+import Deals from "../DailyDeals/deals";
 const LandingPage = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Header />
       <Slider />
       <Campaigns />
+      <Deals />
     </>
   );
 };

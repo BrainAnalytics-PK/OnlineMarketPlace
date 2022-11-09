@@ -1,0 +1,15 @@
+.deals-container {
+  margin-top: 10px;
+  background-color: rgb(0, 64, 26);
+  color: white;
+  text-align: center;
+}
+
+.deals-container-img{
+    width: 100%;
+}
+.deal-card{
+    border:solid 2px white;
+    border-radius: 5px;
+    padding: 10px;
+}

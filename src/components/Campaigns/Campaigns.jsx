@@ -14,13 +14,13 @@ const CampaignData = [
     btnText: "BUY NOW!!",
   },
   {
-    id: 1,
+    id: 2,
     Name: "Amazing Sale on Headphones",
     image: image2,
     btnText: "BUY NOW!!",
   },
   {
-    id: 1,
+    id: 3,
     Name: "Amazing Sale on Headphones",
     image: image3,
     btnText: "BUY NOW!!",
@@ -37,9 +37,9 @@ const Campaigns = () => {
           <p>Upto 70% OFF!!! Hurry Up till Stock </p>
         </div>
       </div>
-      <Grid container justify="center" spacing={0}>
+      <Grid container justifyContent="center" spacing={0}>
         {CampaignData.map((campaign) => (
-          <Grid key={campaign.id} xs={4} sm={4} md={4}>
+          <Grid item key={campaign.id} xs={4} sm={4} md={4}>
             <Campaign campaign={campaign} />
           </Grid>
         ))}
