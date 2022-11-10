@@ -1,0 +1,16 @@
+.Top-Picks-Container{
+    margin-top: 10px;
+    background-color: rgb(236, 230, 230);
+    padding: 10px;
+}
+.Top-Picks-Card{
+    background-color: white;
+    border:rgb(0, 64, 26)  2px solid;
+    margin: 5px ;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.Top-Picks-Container:hover{
+    background-color: red;
+}
