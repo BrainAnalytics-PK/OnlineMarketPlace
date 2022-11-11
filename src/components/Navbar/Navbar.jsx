@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
 import { MdLocationPin } from "react-icons/md";
-import { AiOutlineShopping, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineShopping, AiOutlineUser,AiOutlineSearch } from "react-icons/ai";
 import "./Styles.css";
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
         <Grid item xs={12} sm={12} md={7}>
           <Paper elevation={2} className="search">
             <input type="text" placeholder="Search Your Favorite Products" />
-            <button>Search</button>
+            <button><AiOutlineSearch/></button>
           </Paper>
         </Grid>
         {/* Language Selector */}

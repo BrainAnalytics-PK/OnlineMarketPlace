@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import {FaBars} from 'react-icons/fa';
 import './DrawerStyles.css';
 
 const Drawer = () => {
@@ -10,7 +11,7 @@ const Drawer = () => {
       <div style={{ width: isOpen ? "200px" : "50px" }}>
         <div className="top_section">
           <div style={{ marginLeft: isOpen ? "50px" : "0px" }}>
-            <button className="cat-toggle" onClick={toggle}>Categories</button>
+            <button className="cat-toggle" onClick={toggle}><FaBars/></button>
           </div>
           <h3 style={{ display: isOpen ? "block" : "none" } }className='Cat'>All Categories</h3>
         </div>
