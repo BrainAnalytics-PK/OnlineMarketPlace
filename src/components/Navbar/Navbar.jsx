@@ -1,7 +1,12 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
 import { MdLocationPin } from "react-icons/md";
-import { AiOutlineShopping, AiOutlineUser,AiOutlineSearch } from "react-icons/ai";
+import {
+  AiOutlineShopping,
+  AiOutlineSearch,
+} from "react-icons/ai";
+import LoginPage from "../../Pages/LoginPage/LoginPage";
+// import LoginPage from "../../Pages/LoginPage/LoginPage";
 import "./Styles.css";
 
 const Navbar = () => {
@@ -16,7 +21,9 @@ const Navbar = () => {
         <Grid item xs={6} sm={6} md={1}>
           <MdLocationPin className="icons-location" />
           <select name="Location" className="location">
-            <option value="PAK" defaultChecked>PAK</option>
+            <option value="PAK" defaultChecked>
+              PAK
+            </option>
             <option value="IND">IND</option>
             <option value="AFG">AFG</option>
           </select>
@@ -25,13 +32,17 @@ const Navbar = () => {
         <Grid item xs={12} sm={12} md={7}>
           <Paper elevation={2} className="search">
             <input type="text" placeholder="Search Your Favorite Products" />
-            <button><AiOutlineSearch/></button>
+            <button>
+              <AiOutlineSearch />
+            </button>
           </Paper>
         </Grid>
         {/* Language Selector */}
         <Grid item xs={3} sm={3} md={1}>
-        <select name="Location" className="location">
-            <option value="ENG" defaultChecked>EN</option>
+          <select name="Location" className="location">
+            <option value="ENG" defaultChecked>
+              EN
+            </option>
             <option value="ARB">AR</option>
             <option value="UR">UR</option>
           </select>
@@ -49,10 +60,7 @@ const Navbar = () => {
         {/* Sign In Settings */}
         <Grid item xs={4} sm={3} md={1}>
           <div className="signin">
-            <button className="signin-button">
-              <AiOutlineUser />
-              <br /> SignIn
-            </button>
+              <LoginPage />
           </div>
         </Grid>
       </Grid>

@@ -57,20 +57,11 @@
 }
 .signin {
   margin-top:0px;
-}
-.signin-button {
-  background: none;
-  border-radius: 5px;
-  border: none;
-  font-size: large;
-  font-weight: 500;
-  padding: 10px;
   color: white;
+  font-size: large;
 }
-.signin-button:hover {
-    background-color: white;
-    color: rgb(0, 64, 26);
-  }
+
+
   .navbar-container{
     background-color: rgb(0, 64, 26);
     width: 100%;
