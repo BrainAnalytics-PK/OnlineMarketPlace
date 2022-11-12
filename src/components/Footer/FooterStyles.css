@@ -1,0 +1,26 @@
+.download-text {
+  text-align: center;
+}
+.play{
+  width: 30%;
+}
+.app{
+    width: 30%;
+}
+.download-image{
+    justify-content: center;
+    align-items: center;
+    display: flex   ;
+}
+.social-media{
+    text-align: center;
+    font-size: large;
+}
+.social-media-icons{
+    text-align: center;
+    font-size: xx-large;
+}
+.Footer-Container{
+    margin-top: 10px;
+    background-color: whitesmoke;
+}

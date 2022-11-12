@@ -15,7 +15,7 @@ const Navbar = () => {
       <Grid container spacing={1}>
         {/* LOGO CONTAINER */}
         <Grid item xs={6} sm={6} md={1}>
-          <h1>LOGO</h1>
+          <h1 id="logo">LOGO</h1>
         </Grid>
         {/* Delivery Location */}
         <Grid item xs={6} sm={6} md={1}>
