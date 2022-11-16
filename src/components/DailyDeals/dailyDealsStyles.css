@@ -1,40 +1,42 @@
+:root {
+  --blue: rgb(37, 21, 197);
+  --black: rgb(23, 23, 23);
+  --white: white;
+  --yellow: rgb(252, 202, 42);
+}
 .deals-container {
-  margin-top: 10px;
-  background-color:whitesmoke;
-  text-align: center;
-  padding: 10px;
+  /* margin-top: 10px; */
+  /* background-color: whitesmoke; */
+  /* padding:5px; */
+  text-align: justify;
+  border-radius: 5px;
 }
 
 .deals-container-img {
   width: 100%;
 }
 .deal-card {
-  /* background-color: rgb(210, 206, 206); */
-  /* border: solid 2px; */
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
-  height: 420px; /* or whatever width you want. */
+  height: 380px; /* or whatever width you want. */
   max-height: 420px; /* or whatever width you want. */
   display: inline-block;
+  position: relative;
 }
-.deal-btn{
-  color: white;
-  background: none;
-  border: 2px solid;
+.card-price-new {
+  color: var(--black);
+}
+.card-price-old {
+  color: red;
+}
+#deal-tag {
+  background-color: var(--yellow);
+  color: var(--black);
   border-radius: 5px;
-  font-size: medium;
-  padding: 5px;
-  animation: effect 0.5s linear infinite;
+  text-align: center;
 }
-@keyframes effect {
-  0% {
-      color: rgb(128, 0, 0);
-      -webkit-background-clip: text;
-  }
-
-  100% {
-      color: white;
-      -webkit-background-clip: text;
-  }
+.card-price-container {
+  position: absolute;
+  bottom: 0px;
 }

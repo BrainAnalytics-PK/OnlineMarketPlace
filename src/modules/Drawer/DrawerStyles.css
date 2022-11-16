@@ -1,25 +1,35 @@
+:root {
+    --blue: rgb(37, 21, 197);
+    --black: rgb(23, 23, 23);
+    --white: white;
+    --yellow: rgb(252, 202, 42);
+  }
 .cat-toggle{
     background: none;
     border-radius: 5px;
     border: none;
-    font-size: large;
+    font-size: 600;
     font-weight: 500;
     padding: 10px;
-    color: red;
+    color:var(--black);
+
 }
 .cat-toggle:hover{
-    background-color: red;
-    color: rgb(193, 191, 191);
+    color:var(--blue);
+
 }
 .cat-selector{
     background: none;
     border-radius: 5px;
     border: none;
-    font-size: large;
+    font-size: 700;
     font-weight: 500;
     padding: 10px;
 }
 .cat-selector:hover{
-    background-color:rgb(193, 191, 191) ;
-    color: red;
+    background-color:var(--white) ;
+    color: var(--blue);
+}
+.cat-text{
+    margin-top: 8px;
 }

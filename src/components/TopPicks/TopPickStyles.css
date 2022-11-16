@@ -1,16 +1,15 @@
-.Top-Picks-Container{
-    margin-top: 10px;
-    background-color: rgb(236, 230, 230);
-    padding: 10px;
-}
-.Top-Picks-Card{
-    background-color: white;
-    border:rgb(0, 64, 26)  2px solid;
-    margin: 5px ;
-    text-align: center;
-    border-radius: 5px;
-}
 
-.Top-Picks-Container:hover{
-    background-color: red;
+:root {
+    --blue: rgb(37, 21, 197);
+    --black: rgb(23, 23, 23);
+    --white: white;
+    --yellow: rgb(252, 202, 42);
+}
+.top-picks-container{
+    text-align: center;
+    width: 100%;
+    /* padding: 10px; */
+}
+img{
+    width: 100%;
 }

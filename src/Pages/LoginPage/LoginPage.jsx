@@ -101,9 +101,11 @@ export default function LoginPage() {
   return (
     <div>
       <button className="Auth-Btn" onClick={handleOpen}>
-        <AiOutlineUser />
-        <br />
+       
         Sign In
+        &nbsp;
+        <AiOutlineUser />
+
       </button>
       <Modal
         open={open}
@@ -135,9 +137,9 @@ export default function LoginPage() {
             <button
               className="Login-Auth-Btn"
               onClick={() => {
-                if (userName == "") {
+                if (userName === "") {
                   alert("User Name Cannot Be Empty");
-                } else if (password == "") {
+                } else if (password === "") {
                   alert("Password Cannot Be Empty");
                 } else {
                   alert(`Welcome ${userName} Happy Shopping`);

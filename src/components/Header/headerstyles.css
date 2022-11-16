@@ -2,13 +2,14 @@
     background: none;
     border-radius: 5px;
     border: none;
-    font-size: large;
+    font-size: 600;
     font-weight: 500;
     padding: 10px;
+  
 }
 .Categories-btn:hover{
-    background-color: rgb(193, 191, 191);
-    color: red;
+    color: rgb(37, 21, 197);
+
 
 }
 .Categories-toggle{
@@ -26,4 +27,6 @@
 }
 .categories-container{
     background-color: whitesmoke;
+    /* margin-top: 10px; */
+    width: 100%;
 }

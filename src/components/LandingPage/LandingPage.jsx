@@ -7,6 +7,7 @@ import Deals from "../DailyDeals/deals";
 import TopPicks from "../TopPicks/TopPicks";
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
+import ForYou from "../ForYou/ForYou";
 const LandingPage = () => {
   return (
     <>
@@ -15,8 +16,10 @@ const LandingPage = () => {
       <Slider />
       <Campaigns />
       <Deals />
-      <TopPicks />
       <Banner />
+      <TopPicks />
+      <ForYou />
+
       <Footer />
     </>
   );

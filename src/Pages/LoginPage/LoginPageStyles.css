@@ -14,19 +14,20 @@
   background: none;
   border-radius: 5px;
   border: none;
-  font-size: large;
+  font-size: medium;
   font-weight: 500;
   padding: 10px;
-  color: white;
+  color: black;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 .Auth-Btn:hover {
-  background-color: white;
-  color: rgb(0, 64, 26);
+ color: rgb(37, 21, 197);
 }
 .Login-Auth {
   text-align: center;
   margin: 10px;
-  width: 30%;
+  width: 200px ;
   height: 20px;
   border: none;
   border-radius: 5px;

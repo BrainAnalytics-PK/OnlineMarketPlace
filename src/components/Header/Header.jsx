@@ -6,8 +6,8 @@ import "./headerstyles.css";
 const Header = () => {
   return (
     <div className="categories-container">
-      <Grid container  spacing={1}>
-        <Grid item xs={12} sm={12} md={2}>
+      <Grid container  spacing={0}>
+        <Grid item xs={12} sm={12} md={3}>
           <Drawer/>
         </Grid>
         <Grid item xs={3} sm={2} md={1}>

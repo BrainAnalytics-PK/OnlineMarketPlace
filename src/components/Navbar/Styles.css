@@ -1,3 +1,9 @@
+:root {
+  --blue: rgb(37, 21, 197);
+  --black: rgb(23, 23, 23);
+  --white: white;
+  --yellow: rgb(252, 202, 42);
+}
 .search {
   margin-top: 20px;
   width: 100%;
@@ -10,7 +16,7 @@
 .search input::placeholder {
   text-align: center;
   font-size: medium;
-  color: rgb(0, 64, 26);
+  color: var(--blue);
 }
 .search input:focus {
   border: none;
@@ -20,54 +26,58 @@
   border: none;
   margin-top: 5px;
   margin-left: 5px;
-  color: rgb(0, 64, 26);
+  color: var(--blue);
   font-size: large;
 }
 .search button:hover {
-  background-color: white;
-  color: rgb(0, 64, 26);
-  border-radius: 5px;
-
+  color: var(--blue);
 }
 .location {
-  margin-top: 30px;
+  margin-top: 25px;
   border: none;
   border-radius: 50px;
 }
 .icons-location {
   font-size: xx-large;
-  color: white;
+  color: var(--white);
+  margin-top: 10px;
 }
-.cart-nav {
-  font-size: large;
-}
+/* .cart-nav {
+ font-size: 1000;
+} */
 .cart-button {
   background: none;
   border-radius: 5px;
   border: none;
-  font-size: large;
+  font-size: medium;
   font-weight: 500;
   padding: 10px;
-  color: white;
-
+  color: var(--black);
+  margin-top: 10px;
+  margin-left: 50px;
 }
 .cart-button:hover {
-  background-color: white;
-  color: rgb(0, 64, 26);
+  color:var(--blue);
 }
 .signin {
-  margin-top:0px;
-  color: white;
+  margin-top: 0px;
+  color: var(--white);
   font-size: large;
 }
 
-
-  .navbar-container{
-    background-color: rgb(0, 64, 26);
-    width: 100%;
-    border-radius: 5px;
-  }
-  #logo{
-    margin-left: 10px;
-    color: white;
-  }
+.navbar-container {
+  /* background-image: linear-gradient(to right,rgb(252, 202, 42), rgb(243, 200, 58),rgb(252, 202, 42)); */
+  /* border-radius: 5px; */
+  background-color: var(--yellow);
+}
+.logo {
+  width: 60%;
+  padding: 10px;
+}
+.language-container {
+  margin-left: 30px;
+}
+*{
+  margin:0;
+  padding: 0;
+}

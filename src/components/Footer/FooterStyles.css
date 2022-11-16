@@ -1,26 +1,47 @@
+:root {
+  --blue: rgb(37, 21, 197);
+  --black: rgb(23, 23, 23);
+  --white: white;
+  --yellow: rgb(252, 202, 42);
+}
 .download-text {
   text-align: center;
 }
-.play{
+.play {
   width: 30%;
 }
-.app{
+.app {
+  width: 30%;
+}
+.download-image {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.social-media {
+  text-align: center;
+  font-size: large;
+}
+.social-media-icons {
+  text-align: center;
+  font-size: xx-large;
+}
+.Footer-Container {
+  margin-top: 10px;
+  background-color: rgb(235, 230, 167);
+  padding-top: 10px;
+}
+.logo-footer{
     width: 30%;
 }
-.download-image{
-    justify-content: center;
-    align-items: center;
-    display: flex   ;
-}
-.social-media{
+#copy{
     text-align: center;
-    font-size: large;
+    color: var(--black);
 }
-.social-media-icons{
+.links{
     text-align: center;
-    font-size: xx-large;
+    /* margin: 10px; */
 }
-.Footer-Container{
-    margin-top: 10px;
-    background-color: whitesmoke;
+.links:hover{
+  color: var(--blue);
 }

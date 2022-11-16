@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import {FaBars} from 'react-icons/fa';
-import './DrawerStyles.css';
+import { FaBars } from "react-icons/fa";
+import "./DrawerStyles.css";
 
 const Drawer = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,9 +11,18 @@ const Drawer = () => {
       <div style={{ width: isOpen ? "200px" : "50px" }}>
         <div className="top_section">
           <div style={{ marginLeft: isOpen ? "50px" : "0px" }}>
-           <button className="cat-toggle" onClick={toggle}> Categories <FaBars/></button>
+            <Grid container>
+            <Grid item xs={1} sm={1} md={8}>
+              <button className="cat-toggle" onClick={toggle}>
+              <FaBars />
+              </button>
+              </Grid>
+              {/* <Grid item xs={1} sm={1} md={1}> <div className="cat-text">Categories</div> </Grid> */}
+            </Grid>
           </div>
-          <h3 style={{ display: isOpen ? "block" : "none" } }className='Cat'>All Categories</h3>
+          <h3 style={{ display: isOpen ? "block" : "none" }} className="Cat">
+            All Categories
+          </h3>
         </div>
       </div>
       <div style={{ display: isOpen ? "block" : "none" }}>
@@ -45,7 +54,6 @@ const Drawer = () => {
           <Grid item xs={12} sm={12} md={12}>
             <button className="cat-selector">House Hold</button>
           </Grid>
-          
         </Grid>
       </div>
     </div>

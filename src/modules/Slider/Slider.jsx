@@ -14,13 +14,13 @@ const Slider = () => {
     <Grid container justifyContent="center">
       <div className="slider">
           <SimpleImageSlider
-            width={1300}
-            height={350}
+            width={1349}
+            height={250}
             images={Images}
             showBullets={true}
             showNavs={true}
             autoPlay={true}
-            slideDuration={0.7}
+            slideDuration={2}
           ></SimpleImageSlider>
       </div>
     </Grid>
