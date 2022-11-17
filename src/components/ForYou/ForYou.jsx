@@ -3,24 +3,20 @@ import "./ForyouStyles.css";
 import { Grid } from "@material-ui/core";
 import bestseller from "../../assets/bestseller.jpg";
 import samsungsale from "../../assets/samsungsale.png";
-import applesale from "../../assets/applesale.jpg"
+import applesale from "../../assets/applesale.jpg";
 
 const ForYou = () => {
   return (
     <div className="ForYou-Container">
-      <Grid container justifyContent="center">
+      <Grid container>
         <Grid item xs={12} sm={12} md={6}>
-          <h1>For You</h1>
-          <div className="topselling">
-           <img src={bestseller} className="best-seller-image"alt="" />
-          </div>
+          <img src={bestseller} className="best-seller-image" alt="" />
         </Grid>
+
         <Grid item xs={12} sm={12} md={6}>
-          <div className="topselling" >
-            <img src={samsungsale}className="brandsale" alt="" />
-          </div>
-          <div className="topselling">
-            <img src={applesale}className="brandsale" alt="" />
+          <div>
+            <img className="brandsale" src={samsungsale} alt="" />
+            <img className="brandsale" src={applesale} alt="" />
           </div>
         </Grid>
       </Grid>

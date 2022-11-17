@@ -6,7 +6,7 @@ import image5 from "../../assets/5.webp";
 import image10 from "../../assets/10.webp";
 import image6 from "../../assets/6.webp";
 import image7 from "../../assets/7.webp";
-import image8 from "../../assets/8.webp";
+import image8 from "../../assets/8.webp"; 
 import image9 from "../../assets/9.webp";
 import DailyDeals from "./DailyDeals";
 

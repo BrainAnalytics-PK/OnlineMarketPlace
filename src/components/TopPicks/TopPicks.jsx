@@ -96,7 +96,8 @@ const TopPicks = () => {
           centeredSlides={false}
           autoplay={{
             delay: 2500,
-            disableOnInteraction: true,
+            disableOnInteraction: false,
+            pauseOnMouseEnter:true,
           }}
           pagination={{
             clickable: true,
@@ -105,13 +106,13 @@ const TopPicks = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {TopPickData.map((topPick) => (
-            <div key={topPick.id} className="top-pick-card">
-              <SwiperSlide>
-                <TopPickCard toppick={topPick}/>
+          <div className="top-pick-card">
+            {TopPickData.map((topPick) => (
+              <SwiperSlide key={topPick.id}>
+                <TopPickCard toppick={topPick} />
               </SwiperSlide>
-            </div>
-          ))}
+            ))}
+          </div>
         </Swiper>
       </div>
     </>
@@ -119,75 +120,3 @@ const TopPicks = () => {
 };
 
 export default TopPicks;
-{
-  /* <Swiper
-          slidesPerView={6}
-          spaceBetween={100}
-          centeredSlides={false}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            Slide 1
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 2
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 3
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 4
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 5
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 6
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 7
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 8
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            Slide 9
-            <div className="slide-card">
-              <img src={image} alt="" />
-            </div>
-          </SwiperSlide>
-        </Swiper> */
-}

@@ -1,0 +1,32 @@
+:root {
+    --blue: rgb(37, 21, 197);
+    --black: rgb(23, 23, 23);
+    --white: white;
+    --yellow: rgb(252, 202, 42);
+  }
+.Product-Container{
+margin: auto;
+width: 90%;margin-bottom: 10px;
+}
+.product-name{
+    text-align: center;
+}
+.card-container{
+    margin-top: 10px;
+    padding: 10px;
+    /* border: 1px solid rgb(166, 166, 166); */
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 10px;
+}
+.product-desc{
+    margin-top: 5px;
+    text-align: justify;
+}
+.product-price{
+    margin-top: 10px;
+    color: red;
+}
+.rating-star{
+    color: var(--yellow);
+}

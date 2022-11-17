@@ -8,6 +8,7 @@ import TopPicks from "../TopPicks/TopPicks";
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import ForYou from "../ForYou/ForYou";
+import Products from "../Products/Products";
 const LandingPage = () => {
   return (
     <>
@@ -19,7 +20,8 @@ const LandingPage = () => {
       <Banner />
       <TopPicks />
       <ForYou />
-
+      <Products />
+      <Products />
       <Footer />
     </>
   );

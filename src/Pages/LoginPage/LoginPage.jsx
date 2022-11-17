@@ -102,8 +102,7 @@ export default function LoginPage() {
     <div>
       <button className="Auth-Btn" onClick={handleOpen}>
        
-        Sign In
-        &nbsp;
+        Sign In <br />
         <AiOutlineUser />
 
       </button>

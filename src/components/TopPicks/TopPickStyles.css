@@ -1,15 +1,21 @@
-
 :root {
-    --blue: rgb(37, 21, 197);
-    --black: rgb(23, 23, 23);
-    --white: white;
-    --yellow: rgb(252, 202, 42);
+  --blue: rgb(37, 21, 197);
+  --black: rgb(23, 23, 23);
+  --white: white;
+  --yellow: rgb(252, 202, 42);
 }
-.top-picks-container{
-    text-align: center;
-    width: 100%;
-    /* padding: 10px; */
+.top-picks-container {
+  text-align: center;
+  width: 100%;
+  /* padding: 10px; */
 }
-img{
-    width: 100%;
+img {
+  margin-top: 10px;
+  width: 100%;
+}
+@media only screen and (max-device-width: 768px) {
+  .Top-Card-Container {
+    height: 100px;
+    width: 500%;
+  }
 }

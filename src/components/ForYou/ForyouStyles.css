@@ -1,11 +1,28 @@
-.topselling{
-    padding:5px ;
+.topselling {
+  padding: 5px;
 }
-.best-seller-image{
-    width: 120%;
-    height: 525px;
+.best-seller-image {
+  width: 700px;
+  height: 420px;
+  margin-left: 10px;
 }
-.brandsale{
-    width:80%;
-    margin-left: 130px;
+.brandsale {
+  width:600px;
+  height: 205px;
+  float: right;
+  margin-right: 10px;
 }
+
+@media only screen and (max-device-width: 768px) {
+    .best-seller-image{
+        width:100%;
+        margin:auto;
+    }
+    .brandsale{
+        width: 100%;
+        margin: auto;
+    }
+  }
+  .ForYou-Container{
+    margin-top: 10px;
+  }

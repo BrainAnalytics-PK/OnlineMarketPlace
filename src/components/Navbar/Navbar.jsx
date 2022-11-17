@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Grid container>
           {/* LOGO CONTAINER */}
-          <Grid item xs={6} sm={6} md={1}>
+          <Grid item xs={12} sm={12} md={1}>
             <img src={Logo3} className="logo" alt="" />
           </Grid>
           {/* Delivery Location */}

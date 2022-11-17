@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const TopPickCard = ({toppick}) => {
+const TopPickCard = ({ toppick }) => {
   return (
     <div>
-        <p>
-            {toppick.title}
-        </p>
+      <p>{toppick.title}</p>
+      <div className="Top-Card-Container">
         <img src={toppick.image} alt="" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default TopPickCard
+export default TopPickCard;
