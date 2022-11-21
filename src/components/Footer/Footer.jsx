@@ -9,7 +9,8 @@ import {
   FaTwitterSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import Logo3 from "../../assets/Logo3.svg";
+import Logo1 from "../../assets/Logo1.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,7 +18,9 @@ const Footer = () => {
       <div className="Footer-Container">
         <Grid container justifyContent="center" spacing={0}>
           <Grid item xs={12} sm={3} md={4}>
-            <img src={Logo3} alt="" className="logo-footer" />
+            <Link to="/">
+              <img src={Logo1} alt="" className="logo-footer" />
+            </Link>
           </Grid>
           <Grid item xs={4} sm={4} md={3}>
             <div className="download-text">
@@ -34,38 +37,54 @@ const Footer = () => {
               <p>Connect With Us</p>
             </div>
             <div className="social-media-icons">
-              <FaFacebook /> <FaInstagramSquare /> <FaTwitterSquare />{" "}
+              <FaFacebook /> <FaInstagramSquare /> <FaTwitterSquare />
               <FaLinkedin />
             </div>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">About Us</p>
+            <Link className="links" to="/AboutUs">
+              About Us
+            </Link>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Contact Us</p>
+            <Link className="links" to="/ContactPage">
+              Contact Us
+            </Link>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Careers</p>
+            <Link className="links" to="/Careers">
+              Careers
+            </Link>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Warranty Policy</p>
+            <Link className="links" to="/PrivacyPolicy">
+              Privacy Policy
+            </Link>
           </Grid>
 
           <Grid item xs={3} sm={3} md={1}>
             <p className="links">Sell with us</p>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Privacy Policy</p>
+            <Link className="links" to="/WarrantyPolicy">
+              Warranty Policy
+            </Link>
           </Grid>
 
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Terms of Sale</p>
+            <Link className="links" to="/TermsOfSale">
+              Terms Of Sale
+            </Link>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Terms of Use</p>
+            <Link className="links" to="/TermsOfUse">
+              Terms Of Use
+            </Link>
           </Grid>
           <Grid item xs={3} sm={3} md={1}>
-            <p className="links">Consumer</p>
+            <Link className="links" to="/ConsumerPolicies">
+              Consumer
+            </Link>
           </Grid>
 
           <Grid item xs={12} sm={12} md={12}>

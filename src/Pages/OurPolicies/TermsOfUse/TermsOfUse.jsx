@@ -1,17 +1,16 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-const ContactPage = () => {
+import Navbar from '../../../components/Navbar/Navbar';
+import Footer from '../../../components/Footer/Footer';
+
+const TermsOfUse = () => {
   return (
-    <div>
-      <Navbar/>
-  Contact Us
+    <div> <Navbar/>
+  Terms Of Use
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <Footer/>
-    </div>
+    <Footer/></div>
   )
 }
 
-export default ContactPage
+export default TermsOfUse

@@ -13,14 +13,14 @@
 }
 
 .deals-container-img {
-  width: 100%;
+  width:90%;
 }
 .deal-card {
   border-radius: 5px;
-  padding: 15px;
+  /* padding: 15px; */
   margin: 10px;
-  height: 380px; /* or whatever width you want. */
-  max-height: 420px; /* or whatever width you want. */
+  height: 350px; /* or whatever width you want. */
+  max-height: 350px; /* or whatever width you want. */
   display: inline-block;
   position: relative;
 }
@@ -34,9 +34,13 @@
   background-color: var(--yellow);
   color: var(--black);
   border-radius: 5px;
+  pad: 10px;
   text-align: center;
 }
 .card-price-container {
   position: absolute;
   bottom: 0px;
+}
+.card-rating{
+  color:var(--yellow)
 }

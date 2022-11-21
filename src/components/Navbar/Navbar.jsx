@@ -1,10 +1,11 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
-import { MdLocationPin } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 import { TiShoppingCart } from "react-icons/ti";
 import LoginPage from "../../Pages/LoginPage/LoginPage";
-import Logo3 from "../../assets/Logo3.svg";
+import Logo1 from "../../assets/Logo1.svg";
+import Location from "../../assets/Location.png";
+import { Link } from "react-router-dom";
 
 import "./Styles.css";
 
@@ -15,11 +16,13 @@ const Navbar = () => {
         <Grid container>
           {/* LOGO CONTAINER */}
           <Grid item xs={12} sm={12} md={1}>
-            <img src={Logo3} className="logo" alt="" />
+            <Link to="/">
+              <img src={Logo1} className="logo" alt="" />
+            </Link>
           </Grid>
           {/* Delivery Location */}
           <Grid item xs={6} sm={6} md={1}>
-            <MdLocationPin className="icons-location" />
+            <img src={Location} alt="" className="location-image" />
             <select name="Location" className="location">
               <option value="PAK" defaultChecked>
                 PAK
@@ -53,7 +56,7 @@ const Navbar = () => {
           <Grid item xs={3} sm={3} md={1}>
             <div className="cart-nav">
               <button className="cart-button">
-                Cart
+                Cart <br />
                 <TiShoppingCart className="cart" />
               </button>
             </div>

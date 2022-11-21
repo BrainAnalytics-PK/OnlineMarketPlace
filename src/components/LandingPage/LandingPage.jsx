@@ -9,20 +9,22 @@ import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import ForYou from "../ForYou/ForYou";
 import Products from "../Products/Products";
+import FooterBanner from "../FooterBanners/FooterBanner";
 const LandingPage = () => {
   return (
     <>
-      <Navbar />
-      <Header />
-      <Slider />
-      <Campaigns />
-      <Deals />
-      <Banner />
-      <TopPicks />
-      <ForYou />
-      <Products />
-      <Products />
-      <Footer />
+        <Navbar />
+        <Header />
+        <Slider />
+        <Campaigns />
+        <Deals />
+        <Banner />
+        <TopPicks />
+        <ForYou />
+        <Products />
+        <Products />
+        <FooterBanner />
+        <Footer />
     </>
   );
 };

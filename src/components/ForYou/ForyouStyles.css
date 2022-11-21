@@ -2,27 +2,48 @@
   padding: 5px;
 }
 .best-seller-image {
-  width: 700px;
-  height: 420px;
+  width: 100%;
+  height: auto;
   margin-left: 10px;
 }
 .brandsale {
-  width:600px;
-  height: 205px;
-  float: right;
-  margin-right: 10px;
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (max-device-width: 768px) {
-    .best-seller-image{
-        width:100%;
-        margin:auto;
-    }
-    .brandsale{
-        width: 100%;
-        margin: auto;
-    }
+  .best-seller-image {
+    width: 100%;
+    margin: auto;
+  }
+  .brandsale {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 300px;
   }
   .ForYou-Container{
-    margin-top: 10px;
+  height: auto;
   }
+}
+.s {
+  width: 100%;
+}
+.best-deal-container {
+  overflow: hidden;
+  margin: 15px;
+}
+.brand-deal-container {
+  overflow: hidden;
+  margin: 15px;
+}
+.s {
+  max-height: 185px;
+}
+.a {
+  max-height: 185px;
+}
+.ForYou-Container{
+max-height: 430px;
+overflow-y: hidden;
+}

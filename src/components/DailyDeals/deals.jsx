@@ -17,6 +17,7 @@ const DealsData = [
     image: image5,
     oldPrice: "$ 299",
     newPrice: "$ 199",
+    ratings: "4.9"
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const DealsData = [
     image: image10,
     oldPrice: "$ 299",
     newPrice: "$ 199",
+    ratings: "4.6"
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const DealsData = [
     image: image6,
     oldPrice: "$ 299",
     newPrice: "$ 199",
+    ratings: "3.8"
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const DealsData = [
     image: image7,
     oldPrice: "$ 299",
     newPrice: "$ 199",
+    ratings: "3.9"
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const DealsData = [
     image: image8,
     oldPrice: "$ 299",
     newPrice: "$ 199",
+    ratings: "3.2"
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const DealsData = [
     image: image9,
     oldPrice: "$ 299",
     newPrice: "$ 199",
+    ratings: "4.8"
   },
 ];
 

@@ -3,6 +3,7 @@ import { Box, Modal } from "@material-ui/core";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaWindowClose, FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import Logo1 from "../../assets/Logo1.svg";
 import "./LoginPageStyles.css";
 
 function ChildModal() {
@@ -101,10 +102,8 @@ export default function LoginPage() {
   return (
     <div>
       <button className="Auth-Btn" onClick={handleOpen}>
-       
         Sign In <br />
         <AiOutlineUser />
-
       </button>
       <Modal
         open={open}
@@ -117,6 +116,9 @@ export default function LoginPage() {
             <button className="close" onClick={handleClose}>
               <FaWindowClose />
             </button>
+            <div className="login-header">
+              <img className="auth-logo" src={Logo1} alt="" />
+            </div>
             <h2 id="parent-modal-title">Sign In</h2>
             <p>Hi There !!! Please Sign In to Continue Shopping </p>
             <input

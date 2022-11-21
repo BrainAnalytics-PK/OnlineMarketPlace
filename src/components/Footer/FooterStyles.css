@@ -31,17 +31,26 @@
   background-color: rgb(235, 230, 167);
   padding-top: 10px;
 }
-.logo-footer{
-    width: 30%;
+.logo-footer {
+  width: 25%;
+  padding-left: 50px;
 }
-#copy{
-    text-align: center;
-    color: var(--black);
+#copy {
+  text-align: center;
+  color: var(--black);
 }
-.links{
-    text-align: center;
-    /* margin: 10px; */
+.links {
+  text-align: center;
+  color: black;
+  /* margin: 10px; */
 }
-.links:hover{
+.links:hover {
   color: var(--blue);
+}
+@media only screen and (max-device-width: 768px) {
+  .logo-footer {
+    display: block;
+    /* width: 30%; */
+    margin: auto;
+  }
 }

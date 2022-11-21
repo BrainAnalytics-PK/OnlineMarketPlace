@@ -1,6 +1,7 @@
 // To display data on Front End
 import React from "react";
 import { Paper } from "@material-ui/core";
+import {AiTwotoneStar} from "react-icons/ai";
 import "./dailyDealsStyles.css";
 
 const DailyDeals = ({ deal }) => {
@@ -24,6 +25,13 @@ const DailyDeals = ({ deal }) => {
             </p>
             <p className="card-price-old">
               Before: <strike>PKR {deal.oldPrice}</strike>
+            </p>
+            <p>
+              Ratings: {deal.ratings} &nbsp; 
+              <AiTwotoneStar className="card-rating"/>
+              <AiTwotoneStar className="card-rating"/>
+              <AiTwotoneStar className="card-rating"/>
+              <AiTwotoneStar className="card-rating"/>
             </p>
           </div>
         </div>
