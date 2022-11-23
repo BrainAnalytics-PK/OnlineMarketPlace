@@ -17,12 +17,12 @@ const Header = () => {
           </Link>
         </Grid>
         <Grid item xs={3} sm={2} md={1}>
-          <Link to="./Fashion">
+          <Link to="/Fashion">
             <button className="Categories-btn">Fashion</button>
           </Link>
         </Grid>
         <Grid item xs={3} sm={2} md={1}>
-          <Link to="./Health">
+          <Link to="/Health">
             <button className="Categories-btn">Health</button>
           </Link>
         </Grid>
