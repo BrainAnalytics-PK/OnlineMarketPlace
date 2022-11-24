@@ -55,10 +55,12 @@ const Navbar = () => {
           {/* Cart Settings */}
           <Grid item xs={3} sm={3} md={1}>
             <div className="cart-nav">
+              <Link to='/Cart'>
               <button className="cart-button">
                 Cart <br />
                 <TiShoppingCart className="cart" />
               </button>
+              </Link>
             </div>
           </Grid>
           {/* Sign In Settings */}

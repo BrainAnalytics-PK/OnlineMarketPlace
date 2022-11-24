@@ -5,76 +5,34 @@
   --yellow: rgb(252, 202, 42);
 }
 .Footer-Banner-Container {
-  /* background-color: whitesmoke; */
+  background-color: var(--yellow);
   padding: 10px;
+  margin:10px;
 }
-.left-container {
-  display: flex;
-  margin: 25px;
-  background-color: var(--black);
-  color: whitesmoke;
+.FB-Images {
+  width: 47%;
+  margin: 1%;
 }
-.left-img {
-  width: 80%;
-}
-.right-img {
-  width: 170px;
-}
-.Head {
-  text-align: left;
-}
-.Sale-Text {
-  font-size: 500;
+.FB-Heading {
   color: var(--blue);
 }
-.laptop {
-  width: 60%;
+.Img-Container{
+  border: 5px solid var(--white);
+  margin: 1%;
+  border-radius: 2px;
 }
-.top {
-  margin: 10px;
-  border: 2px solid rgb(201, 195, 195);
-  padding: 20px;
-}
-.bottom {
-  margin: 10px;
-  padding: 20px;
-}
-.mobile {
-  margin-left: 150px;
-  height: auto;
-  max-width: 100%;
-}
-.mid-container {
-  background-color: whitesmoke;
-  padding: 20px;
-  margin: 10px;
-}
-.mid-img {
-  width: 175px;
-}
-.right-container {
-  background-color: whitesmoke;
-  padding: 20px;
-  margin: 10px;
-}
+/* Mobile Responsive Settings */
+
 @media only screen and (max-device-width: 768px) {
-  .mobile {
-    width: 100%;
-    margin: auto;
+  .FB-Heading {
+    text-align: center;
   }
-  .Footer-Banner-Container {
-    width: auto;
-    margin: 0;
-    overflow: hidden;
+  .Img-Container {
+    display: flexbox;
+    justify-content: center;
+    margin-left: 25px;
   }
-  .left-container {
-    margin: 0;
-    background-color: var(--black);
-    color: whitesmoke;
-  }
-  .right-container {
-    background-color: whitesmoke;
-    padding: 20px;
-    margin: 0;
+  .FB-Images {
+    width: 45%;
   }
 }

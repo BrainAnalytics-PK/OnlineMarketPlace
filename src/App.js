@@ -15,8 +15,8 @@ import Electronics from "./Pages/Categories/Electronics/Electronics";
 import Fashion from "./Pages/Categories/Fashion/Fashion";
 import Grocery from "./Pages/Categories/Grocery/Grocery";
 import Health from "./Pages/Categories/Health/Health";
+import Cart from "./components/Cart/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Switch} from 'react-router-dom'
 function App() {
   return (
     <>
@@ -37,6 +37,7 @@ function App() {
           <Route  path="Fashion" exact element={<Fashion />} />
           <Route  path="Grocery" exact element={<Grocery />} />
           <Route  path="Health" exact element={<Health />} />
+          <Route  path="Cart" exact element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </>

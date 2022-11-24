@@ -1,0 +1,40 @@
+:root {
+  --blue: rgb(37, 21, 197);
+  --black: rgb(23, 23, 23);
+  --white: white;
+  --yellow: rgb(252, 202, 42);
+}
+.c-shop {
+  background-color: var(--yellow);
+  color: var(--white);
+  border: none;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: large;
+}
+.check-out {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: large;
+}
+.check-out:hover {
+  background-color: white;
+  color: var(--blue);
+  cursor: pointer;
+}
+.c-shop:hover {
+  background-color: white;
+  color: var(--yellow);
+  cursor: pointer;
+}
+.cart-heading{
+  text-align: center;
+  color: var(--yellow);
+}

@@ -10,12 +10,10 @@ const Drawer = () => {
     <div className="container">
       <div style={{ width: isOpen ? "200px" : "50px" }}>
         <div className="top_section">
-          <div style={{ marginLeft: isOpen ? "50px" : "0px" }}>
+          <div>
             <Grid container>
-            <Grid item xs={1} sm={1} md={8}>
-              <button className="cat-toggle" onClick={toggle}>
-              <FaBars />
-              </button>
+              <Grid item xs={1} sm={1} md={8}>
+                <FaBars className="cat-toggle" onClick={toggle} />
               </Grid>
               {/* <Grid item xs={1} sm={1} md={1}> <div className="cat-text">Categories</div> </Grid> */}
             </Grid>

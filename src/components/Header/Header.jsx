@@ -8,12 +8,12 @@ const Header = () => {
   return (
     <div className="categories-container">
       <Grid container spacing={0}>
-        <Grid item xs={12} sm={12} md={3}>
+        <Grid item xs={12} sm={12} md={2}>
           <Drawer />
         </Grid>
         <Grid item xs={3} sm={2} md={1}>
-          <Link to="/Electronics">
-            <button className="Categories-btn">Electronics</button>{" "}
+          <Link to="/">
+            <button className="Categories-btn">Home</button>
           </Link>
         </Grid>
         <Grid item xs={3} sm={2} md={1}>
@@ -29,6 +29,11 @@ const Header = () => {
         <Grid item xs={3} sm={2} md={1}>
           <Link to="/Grocery" target="_blank" rel="noopener noreferrer">
             <button className="Categories-btn">Grocery</button>
+          </Link>
+        </Grid>
+        <Grid item xs={3} sm={2} md={1}>
+          <Link to="/Electronics">
+            <button className="Categories-btn">Electronics</button>
           </Link>
         </Grid>
         <Grid item xs={3} sm={2} md={1}>
