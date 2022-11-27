@@ -1,159 +1,165 @@
-import * as React from "react";
-import { Box, Modal } from "@material-ui/core";
+import React, { useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
-import { FaWindowClose, FaFacebook } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import Logo1 from "../../assets/Logo1.svg";
+import { Grid } from "@material-ui/core";
 import "./LoginPageStyles.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import { createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../Firebase/firebase-config";
+const LoginPage = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [firstName, setfirstName] = useState("");
+  const [lastName, setlastName] = useState("");
 
-function ChildModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const signup = () =>{
+    if (email === "") {
+      alert("Please Enter a Valid Email Address");
+    }
+    else if (password === "") {
+      alert("Please Enter a Valid Password");
+      
+    }
+    else{
+      register(email, password);
+    }
+  }
 
+  const login = () =>{
+    if (email === "") {
+      alert("Please Enter a Valid Email Address");
+    }
+    else if (password === "") {
+      alert("Please Enter a Valid Password");
+      
+    }
+    else{
+      signin(email, password);
+    }
+  }
+
+  const register = async (e, p) => {
+    try {
+      const user = await createUserWithEmailAndPassword(auth, e, p);
+      alert(`Welcome User: ${e}`);
+
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  const signin = async (e, p) => {
+    try {
+      const user = await signInWithEmailAndPassword(auth, e, p);
+      alert(`Logged in as User: ${email}`);
+
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  const signout = async () => {
+    await signOut(auth);
+  };
   return (
     <>
-      {/* Sign UP Page Toggle */}
-      <div>
-        <button className="Signup-Auth-Btn" onClick={handleOpen}>
-          Sign Up
-        </button>
-        <Modal
-          hideBackdrop
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="child-modal-title"
-          aria-describedby="child-modal-description"
-        >
-          <Box>
-            <div className="Sign-Up-Container">
-              <button className="close" onClick={handleClose}>
-                <FaWindowClose />
+      <Navbar />
+      <Header />
+      {/* Login Section */}
+      <h1 id="Login-heading">Welcome to Aain!</h1>
+      <div className="LoginPage-Container">
+        <Grid container spacing={8}>
+          <Grid item xs={12} sm={12} md={4}>
+            <div className="Login-Section">
+              <h2 className="Login-heading">Hi There</h2>
+              <p className="Login-heading">Sign in to your account</p>
+              <div className="input-container">
+                <p>Enter Your Email*</p>
+                <input
+                  placeholder="Enter Email"
+                  type="email"
+                  className="Login-input"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <p>Enter Password*</p>
+                <input
+                  placeholder="Enter Password"
+                  className="Login-input
+              "
+                  type="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <br />
+                <button onClick={login} className="Login-btn">Login</button>
+                <br />
+                <a id="forget" href="">
+                  Forgot password?
+                </a>
+              </div>
+            </div>
+          </Grid>
+          {/* Sign Up Section */}
+          <Grid item xs={12} sm={12} md={4}>
+            <div className="Signup-Section">
+              <h3 className="Login-heading">Don't have an account?</h3>
+              <p className="Login-heading">Let's get one!</p>
+              <div className="input-container">
+                <p>Enter Your Email*</p>
+                <input
+                  placeholder="Enter Email"
+                  type="email"
+                  className="Login-input"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <p>Enter Password*</p>
+                <input
+                  placeholder="Enter Password"
+                  className="Login-input
+              "
+                  type="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+                <p>Enter First Name:</p>
+                <input
+                  placeholder="First Name"
+                  className="Login-input
+              "
+                  type="password"
+                  onChange={(e) => setfirstName(e.target.value)}
+                />
+                <p>Enter Last Name:</p>
+                <input
+                  placeholder="Last Name"
+                  className="Login-input
+              "
+                  type="password"
+                  onChange={(e) => setlastName(e.target.value)}
+                />
+                <br />
+                <button onClick={signup} className="Login-btn">Signup</button>
+              </div>
+            </div>
+          </Grid>
+          {/* Social Media Login */}
+          <Grid item xs={12} sm={12} md={4}>
+            <div className="social-media">
+              <h3 className="Login-heading">Or</h3>
+              <p className="Login-heading"> Login using</p>
+              <button className="social-media-login">
+                FaceBook <FaFacebook />
               </button>
-              <h3>Sign Up</h3>
-              <h2> Welcome To ************ Lets Get you On board in</h2>
-              <input
-                type="text"
-                className="Sign-Up-Form"
-                placeholder="First Name"
-              />
-              <input
-                type="text"
-                className="Sign-Up-Form"
-                placeholder="User Name"
-              />
-              <input
-                type="text"
-                className="Sign-Up-Form"
-                placeholder="Last Name"
-              />
-              <input
-                type="text"
-                className="Sign-Up-Form"
-                placeholder="Phone Number"
-              />
-              <input type="text" className="Sign-Up-Form" placeholder="Email" />
-              <input
-                type="date"
-                className="Sign-Up-Form"
-                placeholder="Date Of Birth"
-              />
-              <input
-                type="text"
-                className="Sign-Up-Form"
-                placeholder="Password"
-              />
-              <input
-                type="text"
-                className="Sign-Up-Form"
-                placeholder="Confirm Password"
-              />
-              <h3>Or</h3>
-              <p>Sign Up Using</p>
-              <button className="Signup-Auth-Btn-G">
-                <FcGoogle />
-              </button>
-              <button className="Signup-Auth-Btn-F">
-                <FaFacebook />
+              <br />
+              <button className="social-media-login">
+                <FcGoogle /> Google
               </button>
             </div>
-          </Box>
-        </Modal>
+          </Grid>
+        </Grid>
       </div>
+      <Footer />
     </>
   );
-}
+};
 
-export default function LoginPage() {
-  const [open, setOpen] = React.useState(false);
-  const [userName, setUserName] = React.useState("");
-  const [password, SetPassword] = React.useState("");
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  return (
-    <div>
-      <button className="Auth-Btn" onClick={handleOpen}>
-        Sign In <br />
-        <AiOutlineUser />
-      </button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="parent-modal-title"
-        aria-describedby="parent-modal-description"
-      >
-        <Box>
-          <div className="Sign-In-Container">
-            <button className="close" onClick={handleClose}>
-              <FaWindowClose />
-            </button>
-            <div className="login-header">
-              <img className="auth-logo" src={Logo1} alt="" />
-            </div>
-            <h2 id="parent-modal-title">Sign In</h2>
-            <p>Hi There !!! Please Sign In to Continue Shopping </p>
-            <input
-              type="text"
-              placeholder="Enter User Name"
-              className="Login-Auth"
-              onChange={(e) => setUserName(e.target.value)}
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Enter Password"
-              className="Login-Auth"
-              onChange={(e) => SetPassword(e.target.value)}
-            />
-            <br />
-            <button
-              className="Login-Auth-Btn"
-              onClick={() => {
-                if (userName === "") {
-                  alert("User Name Cannot Be Empty");
-                } else if (password === "") {
-                  alert("Password Cannot Be Empty");
-                } else {
-                  alert(`Welcome ${userName} Happy Shopping`);
-                  handleClose();
-                }
-              }}
-            >
-              Sign In
-            </button>
-            <ChildModal />
-          </div>
-        </Box>
-      </Modal>
-    </div>
-  );
-}
+export default LoginPage;

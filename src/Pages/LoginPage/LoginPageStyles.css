@@ -4,130 +4,43 @@
   --white: white;
   --yellow: rgb(252, 202, 42);
 }
-.Sign-In-Container {
+.Login-input {
+  width: 100%;
   text-align: center;
-  color:var(--black);
-  background-color: whitesmoke;
-  width: 50%;
-  border-radius: 5px;
-  width: 450;
-  height: 450px;
-  margin: 0 auto;
-  padding: 10px;
-  margin-top: 50px;
-}
-.Auth-Btn {
-  background: none;
-  border-radius: 5px;
-  border: none;
-  font-size: medium;
-  font-weight: 500;
-  padding: 10px;
-  color: black;
   margin-top: 10px;
-  margin-right: 20px;
+  height: 25px;
 }
-.Auth-Btn:hover {
- color: rgb(37, 21, 197);
-}
-.Login-Auth {
-  text-align: center;
-  margin: 10px;
-  width: 200px ;
-  height: 20px;
-  border: none;
-  border-radius: 5px;
+.Login-btn {
+  background: none;
+  background-color: var(--yellow);
   font-size: large;
   padding: 10px;
-}
-.Login-Auth:hover {
-  background-color: var(--blue);
-  color: white;
-}
-.Sign-Up-Container {
-  background-color: whitesmoke;
+  border: none;
+  margin-top: 10px;
   text-align: center;
-  color: black;
-  width: 70%;
-  margin-top: 50px;
-  margin: 0 auto;
+  float: right;
+}
+.LoginPage-Container {
+  margin-top: 20px;
   padding: 50px;
 }
-.Login-Auth-Btn {
-  color:var(--black);
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: large;
-  padding: 10px;
+#forget {
+  float: left;
 }
-.Login-Auth-Btn:hover {
-  background-color: var(--blue);
-  color: white;
+.input-container {
+  margin-top: 25px;
+  
 }
-
-.Signup-Auth-Btn {
-  background: none;
-  border-radius: 5px;
-  background-color: white;
-  color: var(--yellow);
-  font-size: large;
-  padding: 10px;
-  border: none;
-  width: 150px;
-  margin-top: 10px;
-  text-align: center;
-}
-.Signup-Auth-Btn:hover {
-  color: var(--white);
-  background-color: var(--yellow);
-}
-.close {
-  float: right;
+.social-media-login{
   font-size: xx-large;
-  border: none;
-  color: red;
   background: none;
-}
-.Sign-Up-Form {
-  text-align: center;
-  margin: 10px;
-  width: 30%;
-  height: 20px;
   border: none;
-  border-radius: 5px;
-  font-size: large;
-  padding: 10px;
-}
-.Signup-Auth-Btn-G{
-    background: none;
-    border-radius: 5px;
-    border: none;
-    font-size: xx-large;
-    font-weight: 500;
-    padding: 10px;
-    color: white;
-}
-.Signup-Auth-Btn-F{
-    background: none;
-    border-radius: 5px;
-    border: none;
-    font-size: xx-large;
-    font-weight: 500;
-    padding: 10px;
-    color: rgb(89, 89, 228);
-}
-.Signup-Auth-Btn-G:hover{
-    background-color: yellow;
-}
-.Signup-Auth-Btn-F:hover{
-    background-color: yellow;
-}
-.auth-logo{
-  width: 15%;
-  margin: auto;
-}
-.login-header{
   background-color: var(--yellow);
-  padding: 10px;
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+#Login-heading{
+  text-align: center;
 }

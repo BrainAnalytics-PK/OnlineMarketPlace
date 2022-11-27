@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { TiShoppingCart } from "react-icons/ti";
 import LoginPage from "../../Pages/LoginPage/LoginPage";
 import Logo1 from "../../assets/Logo1.svg";
@@ -55,18 +55,23 @@ const Navbar = () => {
           {/* Cart Settings */}
           <Grid item xs={3} sm={3} md={1}>
             <div className="cart-nav">
-              <Link to='/Cart'>
-              <button className="cart-button">
-                Cart <br />
-                <TiShoppingCart className="cart" />
-              </button>
+              <Link to="/Cart">
+                <button className="cart-button">
+                  Cart <br />
+                  <TiShoppingCart className="cart" />
+                </button>
               </Link>
             </div>
           </Grid>
           {/* Sign In Settings */}
           <Grid item xs={4} sm={3} md={1}>
             <div className="signin">
-              <LoginPage />
+              <Link to="LoginPage">
+                <button className="signin-btn">
+                  Sign in <br />
+                  <AiOutlineUser />
+                </button>
+              </Link>
             </div>
           </Grid>
         </Grid>

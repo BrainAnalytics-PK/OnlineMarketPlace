@@ -16,28 +16,30 @@ import Fashion from "./Pages/Categories/Fashion/Fashion";
 import Grocery from "./Pages/Categories/Grocery/Grocery";
 import Health from "./Pages/Categories/Health/Health";
 import Cart from "./components/Cart/Cart";
+import LoginPage from "./Pages/LoginPage/LoginPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route  path="/" exact element={<LandingPage />} />
-          <Route  path="AboutUs" exact element={<AboutUs />} />
-          <Route  path="ContactPage" exact element={<ContactPage />} />
-          <Route  path="Careers" exact element={<Careers />} />
-          <Route  path="PrivacyPolicy" exact element={<PrivacyPolicy />} />
-          <Route  path="TermsOfSale" exact element={<TermsOfSale />} />
-          <Route  path="TermsOfUse" exact element={<TermsOfUse />} />
-          <Route  path="WarrantyPolicy" exact element={<WarrantyPolicy />} />
-          <Route  path="Baby" exact element={<Baby />} />
-          <Route  path="Beauty" exact element={<Beauty />} />
-          <Route  path="Decor" exact element={<Decor />} />
-          <Route  path="Electronics" exact element={<Electronics />} />
-          <Route  path="Fashion" exact element={<Fashion />} />
-          <Route  path="Grocery" exact element={<Grocery />} />
-          <Route  path="Health" exact element={<Health />} />
-          <Route  path="Cart" exact element={<Cart />} />
+          <Route path="/" exact element={<LandingPage />} />
+          <Route path="LoginPage" exact element={<LoginPage />} />
+          <Route path="AboutUs" exact element={<AboutUs />} />
+          <Route path="ContactPage" exact element={<ContactPage />} />
+          <Route path="Careers" exact element={<Careers />} />
+          <Route path="PrivacyPolicy" exact element={<PrivacyPolicy />} />
+          <Route path="TermsOfSale" exact element={<TermsOfSale />} />
+          <Route path="TermsOfUse" exact element={<TermsOfUse />} />
+          <Route path="WarrantyPolicy" exact element={<WarrantyPolicy />} />
+          <Route path="Baby" exact element={<Baby />} />
+          <Route path="Beauty" exact element={<Beauty />} />
+          <Route path="Decor" exact element={<Decor />} />
+          <Route path="Electronics" exact element={<Electronics />} />
+          <Route path="Fashion" exact element={<Fashion />} />
+          <Route path="Grocery" exact element={<Grocery />} />
+          <Route path="Health" exact element={<Health />} />
+          <Route path="Cart" exact element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </>
