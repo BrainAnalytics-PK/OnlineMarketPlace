@@ -16,7 +16,6 @@ import Fashion from "./Pages/Categories/Fashion/Fashion";
 import Grocery from "./Pages/Categories/Grocery/Grocery";
 import Health from "./Pages/Categories/Health/Health";
 import Cart from "./components/Cart/Cart";
-import LoginPage from "./Pages/LoginPage/LoginPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<LandingPage />} />
-          <Route path="LoginPage" exact element={<LoginPage />} />
           <Route path="AboutUs" exact element={<AboutUs />} />
           <Route path="ContactPage" exact element={<ContactPage />} />
           <Route path="Careers" exact element={<Careers />} />

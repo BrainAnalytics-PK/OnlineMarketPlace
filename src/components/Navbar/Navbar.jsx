@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
-import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
 import { TiShoppingCart } from "react-icons/ti";
-import LoginPage from "../../Pages/LoginPage/LoginPage";
 import Logo1 from "../../assets/Logo1.svg";
 import Location from "../../assets/Location.png";
 import { Link } from "react-router-dom";
+import Login from "../../modules/UserAuth/Login/Login";
 
 import "./Styles.css";
 
@@ -66,12 +66,9 @@ const Navbar = () => {
           {/* Sign In Settings */}
           <Grid item xs={4} sm={3} md={1}>
             <div className="signin">
-              <Link to="LoginPage">
-                <button className="signin-btn">
-                  Sign in <br />
-                  <AiOutlineUser />
-                </button>
-              </Link>
+              <button className="signin-btn">
+                <Login />
+              </button>
             </div>
           </Grid>
         </Grid>

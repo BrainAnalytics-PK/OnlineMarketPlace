@@ -60,11 +60,11 @@
   color: var(--blue);
 }
 .signin {
-  margin-top: 0px;
+  /* margin-top: 0px; */
   color: var(--white);
   font-size: large;
 }
-.signin-btn {
+/* .signin-btn {
   background: none;
   border-radius: 5px;
   border: none;
@@ -76,7 +76,7 @@
 }
 .signin-btn:hover {
   color: var(--blue);
-}
+} */
 
 .navbar-container {
   /* background-image: linear-gradient(to right,rgb(252, 202, 42), rgb(243, 200, 58),rgb(252, 202, 42)); */
